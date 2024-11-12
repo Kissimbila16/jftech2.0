@@ -205,3 +205,6 @@ a {
   max-height: 30px;
 }
 
+.card-w{
+  width: 100%!important;
+}
