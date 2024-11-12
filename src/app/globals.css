@@ -38,6 +38,7 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  /* font-family: monospace; */
 }
 
 a {
@@ -142,6 +143,13 @@ a {
   border-radius: 3px;
   }
 
+  .layout-auto{
+    background-color:rgb(0, 0, 0,0.2);
+    height: auto!important;
+    width: 93vw!important;
+    text-align: center;
+    border-radius: 3px;
+    }
 
   .main-txt{
     font-size: 9rem;
@@ -182,4 +190,18 @@ a {
   height: 250px;
   background-color:var(--transparent) ;
   color:white;
+  margin-top: 1%;
 }
+
+.text-s{
+  font-size: 59px;
+}
+.txt-t{
+  margin-top: -5%!important;
+}
+
+.text-auto{
+  height: auto;
+  max-height: 30px;
+}
+

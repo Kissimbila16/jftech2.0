@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Btn_Contato_Nos_circle from "../contacto-circle";
 import Cardmin from "../cardmin";
+import Cardmax from "../cardmax";
 
 var cardes = [
   {
@@ -69,9 +70,10 @@ export default function Dashboard() {
           </div>
         </div>
 
-        <div className="bg w-100 layout ">
-          <section className="d-flex justify-content-around border-simple">
-            <Cardmin
+        <div className=" w-100 layout-auto mb-5 mt-5 ">
+          <section className="d-flex justify-content-around border-simple my-5 ">
+           <div className="d-flex gap-5 ">
+           <Cardmin
               title={"test"}
               num={1}
               text={"loorccccccccccccccc"}
@@ -95,8 +97,37 @@ export default function Dashboard() {
               text={"loorccccccccccccccc"}
               link={"#"}
             />
+           </div>
           </section>
         </div>
+
+
+        <div className="bg w-100 layout mt-5     ">
+        <section className="d-flex justify-content-around border-simple">
+         
+         <div className="d-grid my-5">
+                <h4 className="py-3">
+                <i className="bi bi-plus-circle-fill text-danger fs-5 "></i>   Expertise
+                </h4>
+                <h1 className="fw-bolder text-s text-auto txt-t">
+                    Solucoes
+                </h1>
+                <br/>
+
+                <Cardmax
+              title={"test"}
+              num={1}
+              text={"loorccccccccccccccc"}
+              link={"#"}
+            />
+
+
+         </div>
+
+            
+      </section>
+      </div>
+      
       </div>
     </man>
   );
