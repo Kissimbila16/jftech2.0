@@ -72,62 +72,74 @@ export default function Dashboard() {
 
         <div className=" w-100 layout-auto mb-5 mt-5 ">
           <section className="d-flex justify-content-around border-simple my-5 ">
-           <div className="d-flex gap-5 ">
-           <Cardmin
-              title={"test"}
-              num={1}
-              text={"loorccccccccccccccc"}
-              link={"#"}
-            />
-            <Cardmin
-              title={"test"}
-              num={1}
-              text={"loorccccccccccccccc"}
-              link={"#"}
-            />
-            <Cardmin
-              title={"test"}
-              num={1}
-              text={"loorccccccccccccccc"}
-              link={"#"}
-            />
-            <Cardmin
-              title={"test"}
-              num={1}
-              text={"loorccccccccccccccc"}
-              link={"#"}
-            />
-           </div>
+            <div className="d-flex gap-5 ">
+              <Cardmin
+                title={"test"}
+                num={1}
+                text={"loorccccccccccccccc"}
+                link={"#"}
+              />
+              <Cardmin
+                title={"test"}
+                num={1}
+                text={"loorccccccccccccccc"}
+                link={"#"}
+              />
+              <Cardmin
+                title={"test"}
+                num={1}
+                text={"loorccccccccccccccc"}
+                link={"#"}
+              />
+              <Cardmin
+                title={"test"}
+                num={1}
+                text={"loorccccccccccccccc"}
+                link={"#"}
+              />
+            </div>
           </section>
         </div>
 
-
         <div className="bg w-100 layout mt-5     ">
-        <section className="d-flex justify-content-around border-simple">
-         
-         <div className="d-grid my-5">
-                <h4 className="py-3">
-                <i className="bi bi-plus-circle-fill text-danger fs-5 "></i>   Expertise
-                </h4>
-                <h1 className="fw-bolder text-s text-auto txt-t">
-                    Solucoes
-                </h1>
-                <br/>
+          <section className="d-flex justify-content-around border-simple">
+            <div className="d-grid w-100 my-5 ">
+              <h4 className="py-3 fs-3">
+                <i className="bi bi-plus-circle-fill text-danger fs-5 "></i>{" "}
+                Expertise
+              </h4>
+              <h1 className="fw-light text-s text-auto txt-t">Solucoes</h1>
+              <br />
 
+              <section className="tam-100 d-grid gap-4 mt-4">
                 <Cardmax
-              title={"test"}
-              num={1}
-              text={"loorccccccccccccccc"}
-              link={"#"}
-            />
-
-
-         </div>
-
-            
-      </section>
-      </div>
-      
+                  title={"01"}
+                  num={1}
+                  text={"loorccccccccccccccc"}
+                  link={"#"}
+                />
+                <Cardmax
+                  title={"02"}
+                  num={1}
+                  text={"loorccccccccccccccc"}
+                  link={"#"}
+                />{" "}
+                <Cardmax
+                  title={"03"}
+                  num={1}
+                  text={"loorccccccccccccccc"}
+                  link={"#"}
+                />{" "}
+                <Cardmax
+                  title={"04"}
+                  num={1}
+                  text={"loorccccccccccccccc"}
+                  link={"#"}
+                />
+              </section>
+            </div>
+          </section>
+        </div>
       </div>
     </man>
   );

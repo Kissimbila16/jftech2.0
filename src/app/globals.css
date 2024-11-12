@@ -172,6 +172,13 @@ a {
     text-align: left;
   }
 
+   .txt-left{
+    text-align: left;
+    width: 50%;
+
+
+   }
+
   .img-main{
     margin-top: -5%!important;
   }
@@ -193,11 +200,17 @@ a {
   margin-top: 1%;
 }
 
+.transparent {
+  background-color:var(--transparent) ;
+  color: white;
+}
+
 .text-s{
   font-size: 59px;
 }
 .txt-t{
-  margin-top: -5%!important;
+  padding-top: -3%!important;
+  margin-bottom: 1%!important;
 }
 
 .text-auto{
@@ -206,5 +219,22 @@ a {
 }
 
 .card-w{
-  width: 100%!important;
+  width: 95%!important;
+  height: 180px;
+  border-radius: 0px;
+  margin: auto;
+}
+.tam{
+  width: 300px;
+}
+.ico-card-max{
+  margin-left: -25%!important;
+  width: auto;
+
+}
+
+.bi-arrow-up-right:hover{
+  color: var(--back-color);
+  rotate: 180deg ;
+  transition: color 2s;
 }
