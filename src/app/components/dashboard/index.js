@@ -214,6 +214,26 @@ export default function Dashboard() {
               <Card title={"567"} num={1} text={"projectos"} link={"#"} />
               </section>
 
+              <section className="w-100 d-flex justify-content-around  gap-4 mt-5">
+              <Card title={"567"} num={1} text={"projectos"} link={"#"} />
+              <Card title={"567"} num={1} text={"projectos"} link={"#"} />
+              <Card title={"567"} num={1} text={"projectos"} link={"#"} />
+              <Card title={"567"} num={1} text={"projectos"} link={"#"} />
+              <Card title={"567"} num={1} text={"projectos"} link={"#"} />
+              </section>
+
+              <section className="w-100 d-flex justify-content-around  gap-4 mt-5">
+              <Card title={"567"} num={1} text={"projectos"} link={"#"} />
+              <Card title={"567"} num={1} text={"projectos"} link={"#"} />
+              <Card title={"567"} num={1} text={"projectos"} link={"#"} />
+              <Card title={"567"} num={1} text={"projectos"} link={"#"} />
+              <Card title={"567"} num={1} text={"projectos"} link={"#"} />
+              </section>
+
+<div className="d-flex justify-content-center align-items-center mt-5">
+<Btn_Contato_Nos name={'Ver mais  '} link="#" icon="bi bi-arrow-up-right fs-6" />
+</div>
+
             </div>
           </section>
         </div>
