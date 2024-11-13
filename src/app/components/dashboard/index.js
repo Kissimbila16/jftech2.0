@@ -73,45 +73,23 @@ export default function Dashboard() {
         <div className=" w-100 layout-auto mb-5 mt-5 ">
           <section className="d-flex justify-content-around border-simple my-5 ">
             <div className="d-flex gap-5 ">
-              <Cardmin
-                title={"test"}
-                num={1}
-                text={"loorccccccccccccccc"}
-                link={"#"}
-              />
-              <Cardmin
-                title={"test"}
-                num={1}
-                text={"loorccccccccccccccc"}
-                link={"#"}
-              />
-              <Cardmin
-                title={"test"}
-                num={1}
-                text={"loorccccccccccccccc"}
-                link={"#"}
-              />
-              <Cardmin
-                title={"test"}
-                num={1}
-                text={"loorccccccccccccccc"}
-                link={"#"}
-              />
+              <Cardmin title={"567"} num={1} text={"projectos"} link={"#"} />
+              <Cardmin title={"567"} num={1} text={"projectos"} link={"#"} />
+              <Cardmin title={"567"} num={1} text={"projectos"} link={"#"} />
+              <Cardmin title={"567"} num={1} text={"projectos"} link={"#"} />
             </div>
           </section>
         </div>
+        <br />
 
-        <div className="bg w-100 layout mt-5     ">
+        <div className="bg w-100  layout-auto mt-5     ">
           <section className="d-flex justify-content-around border-simple">
             <div className="d-grid w-100 my-5 ">
-              <h4 className="py-3 fs-3">
-                <i className="bi bi-plus-circle-fill text-danger fs-5 "></i>{" "}
-                Expertise
-              </h4>
+              <h4 className="py-3 fs-3">Expertise</h4>
               <h1 className="fw-light text-s text-auto txt-t">Solucoes</h1>
               <br />
 
-              <section className="tam-100 d-grid gap-4 mt-4">
+              <section className="tam-100 d-grid gap-4 mt-5">
                 <Cardmax
                   title={"01"}
                   num={1}
@@ -140,6 +118,51 @@ export default function Dashboard() {
             </div>
           </section>
         </div>
+
+        <div className=" slide-t row-12 d-flex justify-content-around align-items-center ">
+        <Image
+            decoding="async"
+            width="250"
+            height="250"
+            src={"/logo.png"}
+            className="attachment-full"
+            alt=""
+          />{" "}  <Image
+          decoding="async"
+          width="250"
+          height="250"
+          src={"/logo.png"}
+          className="attachment-full"
+          alt=""
+        />{" "}
+          <Image
+            decoding="async"
+            width="250"
+            height="250"
+            src={"/logo.png"}
+            className="attachment-full"
+            alt=""
+          />{" "}
+          <Image
+            decoding="async"
+            width="250"
+            height="250"
+            src={"/logo.png"}
+            className="attachment-full"
+            alt=""
+          />{" "}
+          <Image
+            decoding="async"
+            width="250"
+            height="250"
+            src={"/logo.png"}
+            className="attachment-full"
+            alt=""
+          />
+        </div>
+        <div className="row-12 d-flex justify-content-around align-items-center ">
+
+      </div>
       </div>
     </man>
   );

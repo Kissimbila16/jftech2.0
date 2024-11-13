@@ -17,7 +17,7 @@ export default function Nav() {
           <Nav_text name="Contacto" way="#home" />
         </ul>
         <Btn_Contato_Nos name={'Orcamento'} />
-        <i className="bi bi-list fs-3"></i>
+        <i className="bi bi-list fs-1 py-3 m-2 mx-3"></i>
         &nbsp;
       </div>
     </nav>
