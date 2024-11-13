@@ -270,3 +270,22 @@ a {
        margin-top: 8%;
        width:var(--width-auto);
     }
+    .slide-w{
+      height: 450px;
+      background-color: red;
+       margin-top: 8%;
+       width:var(--width-auto);
+    }
+    .center{
+  text-align: center;
+    }
+    .text-t{
+      margin-top: -17%;
+    }
+
+    .show{
+      display: none;
+      &:hover{
+      display: block;
+      }
+    }

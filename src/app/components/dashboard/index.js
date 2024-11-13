@@ -2,6 +2,8 @@ import Image from "next/image";
 import Btn_Contato_Nos_circle from "../contacto-circle";
 import Cardmin from "../cardmin";
 import Cardmax from "../cardmax";
+import Btn_Contato_Nos from "../contacto";
+import Card from "../card";
 
 var cardes = [
   {
@@ -120,21 +122,22 @@ export default function Dashboard() {
         </div>
 
         <div className=" slide-t row-12 d-flex justify-content-around align-items-center ">
-        <Image
+          <Image
             decoding="async"
             width="250"
             height="250"
             src={"/logo.png"}
             className="attachment-full"
             alt=""
-          />{" "}  <Image
-          decoding="async"
-          width="250"
-          height="250"
-          src={"/logo.png"}
-          className="attachment-full"
-          alt=""
-        />{" "}
+          />{" "}
+          <Image
+            decoding="async"
+            width="250"
+            height="250"
+            src={"/logo.png"}
+            className="attachment-full"
+            alt=""
+          />{" "}
           <Image
             decoding="async"
             width="250"
@@ -160,9 +163,51 @@ export default function Dashboard() {
             alt=""
           />
         </div>
-        <div className="row-12 d-flex justify-content-around align-items-center ">
+        <div className="slide-w center d-grid  justify-content-around align-items-center ">
+          <h6 className="mb-5 pb-5 mt-4">CONVERSA COM A GENTE</h6>
+        <div className="text-t">
+        <h3 className="w-75 mb-3 mt-5 text-s mx-auto">
+          O seu projeto merece voar com a Tucano
+          </h3>
+        </div>
+        <br/>
 
-      </div>
+          <div className="mx-5 text-t">
+          <Btn_Contato_Nos name={'Conversar agora'} />
+
+          </div>
+        </div>
+
+
+        <div className="bg w-100  layout-auto mt-5     ">
+          <section className="d-flex justify-content-center border-simple">
+            <div className="d-grid w-100 my-5 ">
+              <h4 className="py-3 fs-3">Jobs</h4>
+              <h1 className="fw-light text-s text-auto txt-t">Portfólio</h1>
+              <br />
+
+              <section className="w-100 d-flex justify-content-center  gap-4 mt-5">
+              <Card title={"567"} num={1} text={"projectos"} link={"#"} />
+              <Card title={"567"} num={1} text={"projectos"} link={"#"} />
+              <Card title={"567"} num={1} text={"projectos"} link={"#"} />
+              <Card title={"567"} num={1} text={"projectos"} link={"#"} />
+              <Card title={"567"} num={1} text={"projectos"} link={"#"} />
+              </section>
+
+              <section className="w-100 d-flex justify-content-around  gap-4 mt-5">
+              <Card title={"567"} num={1} text={"projectos"} link={"#"} />
+              <Card title={"567"} num={1} text={"projectos"} link={"#"} />
+              <Card title={"567"} num={1} text={"projectos"} link={"#"} />
+              <Card title={"567"} num={1} text={"projectos"} link={"#"} />
+              <Card title={"567"} num={1} text={"projectos"} link={"#"} />
+              </section>
+
+            </div>
+          </section>
+        </div>
+
+
+
       </div>
     </man>
   );
