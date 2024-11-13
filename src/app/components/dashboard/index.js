@@ -4,6 +4,7 @@ import Cardmin from "../cardmin";
 import Cardmax from "../cardmax";
 import Btn_Contato_Nos from "../contacto";
 import Card from "../card";
+import Nav_text from "../link";
 
 var cardes = [
   {
@@ -182,8 +183,19 @@ export default function Dashboard() {
         <div className="bg w-100  layout-auto mt-5     ">
           <section className="d-flex justify-content-center border-simple">
             <div className="d-grid w-100 my-5 ">
-              <h4 className="py-3 fs-3">Jobs</h4>
+              <h4 className="py-3 fs-3"><i className="bi bi-circle-fill text-danger fs-6"></i> Jobs</h4>
               <h1 className="fw-light text-s text-auto txt-t">Portfólio</h1>
+              <br />
+          <div className="d-flex justify-content-around w-100">
+          <ol className=" w-50 d-flex justify-content-around">
+                <Nav_text name={'Todos'} way="#" />
+                <Nav_text name={'Site'} way="#" />
+                <Nav_text name={'Landing Page'} way="#" />
+                <Nav_text name={'E-commerce'} way="#" />
+                <Nav_text name={'Social Media'} way="#" />
+                <Nav_text name={'Identidade Visual'} way="#" />
+              </ol>
+          </div>
               <br />
 
               <section className="w-100 d-flex justify-content-center  gap-4 mt-5">
