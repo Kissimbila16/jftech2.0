@@ -5,6 +5,7 @@ import Cardmax from "../cardmax";
 import Btn_Contato_Nos from "../contacto";
 import Card from "../card";
 import Nav_text from "../link";
+import Authes from "../cardAuths";
 
 var cardes = [
   {
@@ -53,7 +54,7 @@ export default function Dashboard() {
           </div>
           <div className="row-6 w-50 col-sm-12 col-md-12 col-xxl-6 text-l d-grid ">
             <section className="zone-txt">
-              <h3 className="text-left">Agencia Tucano</h3>
+              <h3 className="text-left"><i className="bi bi-circle-fill text-danger fs-6"></i> Agencia Tucano</h3>
               <h1 className="text-left fs-1 fw-bolder">
                 Experts em colocar o seu projeto para voar
               </h1>
@@ -88,7 +89,7 @@ export default function Dashboard() {
         <div className="bg w-100  layout-auto mt-5     ">
           <section className="d-flex justify-content-around border-simple">
             <div className="d-grid w-100 my-5 ">
-              <h4 className="py-3 fs-3">Expertise</h4>
+              <h4 className="py-3 fs-3"><i className="bi bi-circle-fill text-danger fs-6"></i> Expertise</h4>
               <h1 className="fw-light text-s text-auto txt-t">Solucoes</h1>
               <br />
 
@@ -165,7 +166,7 @@ export default function Dashboard() {
           />
         </div>
         <div className="slide-w center d-grid  justify-content-around align-items-center ">
-          <h6 className="mb-5 pb-5 mt-4">CONVERSA COM A GENTE</h6>
+          <h6 className="mb-5 pb-5 mt-4"><i className="bi bi-circle-fill text-danger fs-6"></i> CONVERSA COM A GENTE</h6>
         <div className="text-t">
         <h3 className="w-75 mb-3 mt-5 text-s mx-auto">
           O seu projeto merece voar com a Tucano
@@ -237,6 +238,69 @@ export default function Dashboard() {
             </div>
           </section>
         </div>
+
+
+
+
+        <div className="bg w-100  layout-auto mt-5">
+          <section className="d-flex border-simple">
+            <div className="d-grid w-100 my-5 ">
+             <section className=" mx-5 left">
+             <h4 className="py-3 fs-3"><i className="bi bi-circle-fill text-danger fs-6"></i> Nos</h4>
+              <h1 className="fw-light text-s text-auto txt-t">Team Tucano</h1>
+              <h6 className="fw-bolder text-secondary w-50 fs-6 text-auto pt-4 "> Conheça a galera que vai fazer o seu projeto voar, no padrão Tucano. </h6>
+            
+             </section>
+              <br />
+
+              <section className="tam-100 d-flex justify-content-around gap-4 mt-5">
+               <Authes name={'domingos J.kissimbila '} foto={'/logo.png'} func={'desenvolvedor web'} />
+               <Authes name={'domingos J.kissimbila '} foto={'/logo.png'} func={'desenvolvedor web'} />
+               <Authes name={'domingos J.kissimbila '} foto={'/logo.png'} func={'desenvolvedor web'} />
+               <Authes name={'domingos J.kissimbila '} foto={'/logo.png'} func={'desenvolvedor web'} />
+              </section>
+            </div>
+          </section>
+        </div>
+
+
+        <div className="bg w-100  layout-auto mt-5     ">
+          <section className="d-flex justify-content-around border-simple">
+            <div className="d-grid w-100 my-5 ">
+              <h4 className="py-3 fs-3"><i className="bi bi-circle-fill text-danger fs-6"></i>Expertise</h4>
+              <h1 className="fw-light text-s text-auto txt-t">Solucoes</h1>
+              <br />
+
+              <section className="tam-100 d-grid gap-4 mt-5">
+                <Cardmax
+                  title={"01"}
+                  num={1}
+                  text={"loorccccccccccccccc"}
+                  link={"#"}
+                />
+                <Cardmax
+                  title={"02"}
+                  num={1}
+                  text={"loorccccccccccccccc"}
+                  link={"#"}
+                />{" "}
+                <Cardmax
+                  title={"03"}
+                  num={1}
+                  text={"loorccccccccccccccc"}
+                  link={"#"}
+                />{" "}
+                <Cardmax
+                  title={"04"}
+                  num={1}
+                  text={"loorccccccccccccccc"}
+                  link={"#"}
+                />
+              </section>
+            </div>
+          </section>
+        </div>
+
 
 
 

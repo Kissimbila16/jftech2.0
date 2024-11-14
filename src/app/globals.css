@@ -207,7 +207,7 @@ a {
 }
 
 .transparent {
-  background-color:#1a1818 ;
+  background-color:var(--transparent) ;
   color: white;
   border-color:transparent!important;
   border-width:1px;
@@ -279,6 +279,10 @@ a {
     .center{
   text-align: center;
     }
+
+    .left{
+      text-align: left;
+        }
     .text-t{
       margin-top: -17%;
     }
@@ -319,3 +323,13 @@ a {
      }
 }
 
+.wid{
+   width: 350px;
+   height: 400px;
+}
+
+.w-card{
+  width: 18.3vw;
+  margin-left: -5%!important;
+  border: solid 1px;
+}
