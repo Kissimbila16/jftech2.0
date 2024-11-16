@@ -127,7 +127,7 @@ a {
 
 
 .fundoPrincipal{
-  background-color: green!important;
+  background-color: var(--transparent2)!important;
   height: 85vh!important;
   width: 93vw!important;
   text-align: center;
@@ -216,7 +216,7 @@ a {
 
 .card-body.transparent:hover{
   color: white;
-  border-color:red!important;
+  border-color:var(--transparent2)!important;
   border-width:2px;
   border-style:solid;
   transition: 1s all;
@@ -266,13 +266,13 @@ a {
 
     .slide-t{
       height: 300px;
-      background-color: red;
+      background-color:var(--transparent2);
        margin-top: 8%;
        width:var(--width-auto);
     }
     .slide-w{
       height: 450px;
-      background-color: red;
+      background-color:var(--transparent2);
        margin-top: 8%;
        width:var(--width-auto);
     }
@@ -303,7 +303,7 @@ a {
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      /* background-color: red; */
+      /* background-color:var(--transparent2); */
       height: 200px;
     }
 
@@ -332,4 +332,111 @@ a {
   width: 18.3vw;
   margin-left: -5%!important;
   border: solid 1px;
+}
+.flex-center{
+    display:flex;
+    justify-content:center;
+    width: 100%;
+    
+}
+
+.mar-t{
+  padding-top: -2%!important;
+}
+.mart{
+  margin-left: -15%!important;
+}
+
+.h-200{
+  width:100%;
+}
+
+/* codigo para fazer os inputs de formularios  */
+.form__group {
+  position: relative;
+  padding: 20px 0 0;
+  width: 100%;
+  /* margin-left: -15%!important; */
+  
+  /* max-width: 180px;   */
+}
+
+.form__field {
+  font-family: inherit;
+  width: 70%;
+  border: none;
+  border-bottom: 2px solid var(--transparent2);
+  outline: 0;
+  font-size: 17px;
+  color: #fff;
+  padding: 7px 0;
+  margin-left: -30%!important;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 17px;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  color: #9b9b9b;
+  pointer-events: none;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, var(--transparent2) , var(--transparent2) );
+  border-image-slice: 1;
+}
+
+.area,.area:focus {
+  border-width: 1px;
+  border-image: linear-gradient(to right, var(--transparent2) , var(--transparent2) );
+  border-image-slice: 1;
+  resize: none!important;
+
+}
+
+.form__field:focus ~ .form__label {
+  position: absolute;
+  /* top: 0; */
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  /* color: #38caef; */
+  font-weight: 700;
+}
+
+/* reset input */
+.form__field:required, .form__field:invalid {
+  box-shadow: none;
+}
+/* fim do codigo para os inputs */
+
+
+.list-footer{
+  list-style: none;
+  margin-top:-9%;
+  padding-top:-9%;
+  display: grid;
+}
+
+.list-footer>li>h5{
+  margin-top:1%;
+  width: 300px;
+
 }

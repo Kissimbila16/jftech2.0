@@ -1,10 +1,12 @@
 import Btn_Contato_Nos from "@/app/components/contacto";
 import Icon from "@/app/components/Icon";
 import Nav_text from "@/app/components/link";
+import Rede_Socias from "@/app/components/socias";
 
 export default function Nav() {
   return (
     <nav>
+      <Rede_Socias/>
       <div className="d-flex justify-content-around bg">
         <Icon />
         <ul className="list d-flex ">
