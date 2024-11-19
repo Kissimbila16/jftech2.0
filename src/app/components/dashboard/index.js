@@ -8,17 +8,35 @@ import Nav_text from "../link";
 import Authes from "../cardAuths";
 import CardContent from "../cardcontent";
 import Link from "next/link";
+import Typed_text from "../typed";
 
 export default function Dashboard() {
   return (
     <man>
       <div className="container row-100 w-100">
-        <div className={"d-flex alig-items-center fundoPrincipal"}>
-          <h1 className="text-center main-txt">Agencia Tucano</h1>
+        <div className={"d-flex alig-items-center fundoPrincipal btn-shine"}>
+          <h1 className="text-center main-txt">
+            <Typed_text text={"Jftech"} clas={"w-100 text-danger"} />{" "}
+          </h1>
+        </div>
+        <div className="left-icons w-100 gap-4">
+          <Link href={"#"}>
+            <i className="bi bi-instagram fs-3 mx-1"></i>
+          </Link>
+          <Link href={"#"}>
+            <i className="bi bi-linkedin fs-3 mx-1"></i>
+          </Link>
+          <Link href={"#"}>
+            <i className="bi bi-facebook fs-3 mx-1"></i>
+          </Link>
         </div>
 
         <div
           className={"d-flex justify-content-around-around my-5 mx-5  layout  "}
+          id="Jftech"
+          data-aos="fade-right"
+          data-aos-offset="600"
+          data-aos-easing="ease-in-sine"
         >
           <div className="row-6 w-50 col-sm-12 col-md-12 col-xxl-6 img-main text-l">
             <Image src={"/logo.png"} alt="foto" width={"700"} height={"500"} />
@@ -27,23 +45,25 @@ export default function Dashboard() {
             <section className="zone-txt">
               <h3 className="text-left">
                 <i className="bi bi-circle-fill text-danger fs-6"></i> Agencia
-                Tucano
+                JFTech
               </h3>
               <h1 className="text-left fs-1 fw-bolder">
                 Experts em colocar o seu projeto para voar
               </h1>
               <h5>
-                criamos, planejamos, desenvolvemos e executamos projectos que
-                realmente funcionam e apresentam resultados. <br /> <br />
-                Nao temos medo de voar: para que pes se a agencia tucano tem
-                asas?E ai, vamos voar juntos?
+                A JF-Tech Angola é uma empresa inovadora especializada no
+                desenvolvimento de soluções web e desktop. Com uma equipe
+                altamente qualificada e experiente, nos dedicamos a oferecer
+                serviços personalizados que atendem às necessidades específicas
+                de nossos clientes. Nossa missão é transformar desafios em
+                oportunidades através da tecnologia.
               </h5>
               <br />
-              <Btn_Contato_Nos_circle
-                name={" Fale conosco"}
-                classe="btn-lg"
-                link="#whatshapp"
-              />
+                <Btn_Contato_Nos_circle
+                  name={" Fale conosco"}
+                  classe="btn-lg"
+                  link="#whatshapp"
+                />
             </section>
           </div>
         </div>
@@ -60,37 +80,48 @@ export default function Dashboard() {
         </div>
         <br />
 
-        <div className="bg w-100  layout-auto mt-5     ">
+        <div className="bg w-100  layout-auto mt-5" id="Solucoes">
           <section className="d-flex justify-content-around border-simple">
-            <div className="d-grid w-100 my-5 ">
+            <div
+              className="d-grid w-100 my-5 "
+              data-aos="fade-up"
+              data-aos-offset="600"
+              data-aos-easing="ease-in-sine"
+            >
               <h4 className="py-3 fs-3">
                 <i className="bi bi-circle-fill text-danger fs-6"></i> Expertise
               </h4>
               <h1 className="fw-bolder text-s text-auto txt-t">Solucoes</h1>
               <br />
 
-              <section className="tam-100 d-grid gap-4 mt-5">
+              <section
+                className="tam-100 d-grid gap-4 mt-5"
+                data-aos="fade-left"
+                data-aos-anchor="#example-anchor"
+                data-aos-offset="600"
+                data-aos-duration="500"
+              >
                 <Cardmax
                   title={"01"}
-                  num={1}
+                  num={500}
                   text={"loorccccccccccccccc"}
                   link={"#"}
                 />
                 <Cardmax
                   title={"02"}
-                  num={1}
+                  num={600}
                   text={"loorccccccccccccccc"}
                   link={"#"}
                 />{" "}
                 <Cardmax
                   title={"03"}
-                  num={1}
+                  num={700}
                   text={"loorccccccccccccccc"}
                   link={"#"}
                 />{" "}
                 <Cardmax
                   title={"04"}
-                  num={1}
+                  num={800}
                   text={"loorccccccccccccccc"}
                   link={"#"}
                 />
@@ -99,47 +130,21 @@ export default function Dashboard() {
           </section>
         </div>
 
-        <div className=" slide-t row-12 d-flex justify-content-around align-items-center ">
-          <Image
-            decoding="async"
-            width="250"
-            height="250"
-            src={"/logo.png"}
-            className="attachment-full"
-            alt=""
-          />{" "}
-          <Image
-            decoding="async"
-            width="250"
-            height="250"
-            src={"/logo.png"}
-            className="attachment-full"
-            alt=""
-          />{" "}
-          <Image
-            decoding="async"
-            width="250"
-            height="250"
-            src={"/logo.png"}
-            className="attachment-full"
-            alt=""
-          />{" "}
-          <Image
-            decoding="async"
-            width="250"
-            height="250"
-            src={"/logo.png"}
-            className="attachment-full"
-            alt=""
-          />{" "}
-          <Image
-            decoding="async"
-            width="250"
-            height="250"
-            src={"/logo.png"}
-            className="attachment-full"
-            alt=""
-          />
+        <div className=" slide-t row-12 d-flex justify-content-around align-items-center">
+          <div className="card-slide">
+            <div className="emojis">
+              <button>😄</button>
+              <button>😁</button>
+              <button>😆</button>
+              <button>😂</button>
+            </div>
+            <div className="emojis">
+              <button>😄</button>
+              <button>😁</button>
+              <button>😆</button>
+              <button>😂</button>
+            </div>
+          </div>
         </div>
         <div className="slide-w center d-grid  justify-content-around align-items-center ">
           <h6 className="mb-5 pb-5 mt-4">
@@ -148,7 +153,7 @@ export default function Dashboard() {
           </h6>
           <div className="text-t">
             <h3 className="w-75 mb-3 mt-5 text-s mx-auto">
-              O seu projeto merece voar com a Tucano
+              O seu projeto merece voar com a JFTech
             </h3>
           </div>
           <br />
@@ -159,7 +164,10 @@ export default function Dashboard() {
         </div>
 
         <div className="bg w-100  layout-auto mt-5     ">
-          <section className="d-flex justify-content-center border-simple">
+          <section
+            className="d-flex justify-content-center border-simple"
+            id="Portfolio"
+          >
             <div className="d-grid w-100 my-4 ">
               <h4 className="py-3 fs-3">
                 <i className="bi bi-circle-fill text-danger fs-6"></i> Jobs
@@ -178,35 +186,60 @@ export default function Dashboard() {
               </div>
               <br />
 
-              <section className="w-100 d-flex justify-content-center  gap-3 mt-5">
+              <section
+                className="w-100 d-flex justify-content-center  gap-3 mt-5"
+                data-aos="fade-left"
+                data-aos-offset="600"
+                data-aos-easing="ease-in-sine"
+              >
                 <Card title={"567"} num={1} text={"projectos"} link={"#"} />
                 <Card title={"567"} num={1} text={"projectos"} link={"#"} />
                 <Card title={"567"} num={1} text={"projectos"} link={"#"} />
                 <Card title={"567"} num={1} text={"projectos"} link={"#"} />
               </section>
 
-              <section className="w-100 d-flex justify-content-around  gap-3 mt-5">
+              <section
+                className="w-100 d-flex justify-content-around  gap-3 mt-5"
+                data-aos="fade-right"
+                data-aos-offset="600"
+                data-aos-easing="ease-in-sine"
+              >
                 <Card title={"567"} num={1} text={"projectos"} link={"#"} />
                 <Card title={"567"} num={1} text={"projectos"} link={"#"} />
                 <Card title={"567"} num={1} text={"projectos"} link={"#"} />
                 <Card title={"567"} num={1} text={"projectos"} link={"#"} />
               </section>
 
-              <section className="w-100 d-flex justify-content-around  gap-3 mt-5">
+              <section
+                className="w-100 d-flex justify-content-around  gap-3 mt-5"
+                data-aos="fade-left"
+                data-aos-offset="600"
+                data-aos-easing="ease-in-sine"
+              >
                 <Card title={"567"} num={1} text={"projectos"} link={"#"} />
                 <Card title={"567"} num={1} text={"projectos"} link={"#"} />
                 <Card title={"567"} num={1} text={"projectos"} link={"#"} />
                 <Card title={"567"} num={1} text={"projectos"} link={"#"} />
               </section>
 
-              <section className="w-100 d-flex justify-content-around  gap-3 mt-5">
+              <section
+                className="w-100 d-flex justify-content-around  gap-3 mt-5"
+                data-aos="fade-right"
+                data-aos-offset="600"
+                data-aos-easing="ease-in-sine"
+              >
                 <Card title={"567"} num={1} text={"projectos"} link={"#"} />
                 <Card title={"567"} num={1} text={"projectos"} link={"#"} />
                 <Card title={"567"} num={1} text={"projectos"} link={"#"} />
                 <Card title={"567"} num={1} text={"projectos"} link={"#"} />
               </section>
 
-              <div className="d-flex justify-content-center align-items-center mt-5">
+              <div
+                className="d-flex justify-content-center align-items-center mt-5"
+                data-aos="fade-right"
+                data-aos-offset="600"
+                data-aos-easing="ease-in-sine"
+              >
                 <Btn_Contato_Nos
                   name={"Ver mais  "}
                   link="#"
@@ -217,7 +250,7 @@ export default function Dashboard() {
           </section>
         </div>
 
-        <div className="bg w-100  layout-auto mt-5">
+        <div className="bg w-100  layout-auto mt-5" id="Equipe">
           <section className="d-flex border-simple">
             <div className="d-grid w-100 my-5 ">
               <section className=" mx-5 left">
@@ -225,17 +258,22 @@ export default function Dashboard() {
                   <i className="bi bi-circle-fill text-danger fs-6"></i> Nos
                 </h4>
                 <h1 className="fw-bolder text-s text-auto txt-t">
-                  Team Tucano
+                  Team JFTech
                 </h1>
                 <h6 className="fw-bolder text-secondary w-50 fs-6 text-auto pt-4 ">
                   {" "}
                   Conheça a galera que vai fazer o seu projeto voar, no padrão
-                  Tucano.{" "}
+                  JFTech.{" "}
                 </h6>
               </section>
               <br />
 
-              <section className="tam-100 d-flex justify-content-around gap-4 mt-5">
+              <section
+                className="tam-100 d-flex justify-content-around gap-4 mt-5"
+                data-aos="fade-left"
+                data-aos-offset="600"
+                data-aos-easing="ease-in-sine"
+              >
                 <Authes
                   name={"domingos J.kissimbila "}
                   foto={"/logo.png"}
@@ -261,7 +299,7 @@ export default function Dashboard() {
           </section>
         </div>
 
-        <div className="bg w-100  layout-auto mt-5     ">
+        <div className="bg w-100  layout-auto mt-5">
           <section className="d-flex justify-content-around border-simple">
             <div className="d-grid w-100 my-5 ">
               <h4 className="py-3 fs-3">
@@ -269,11 +307,16 @@ export default function Dashboard() {
                 Depoimentos
               </h4>
               <h1 className="fw-bolder text-s text-auto txt-t">
-                O que falam da Tucano
+                O que falam da JFTech
               </h1>
               <br />
 
-              <section className="tam-100 d-flex gap-3 mx-5 justify-content-center mt-5">
+              <section
+                className="tam-100 d-flex gap-3 mx-5 justify-content-center mt-5"
+                data-aos="fade-up"
+                data-aos-offset="600"
+                data-aos-easing="ease-in-sine"
+              >
                 <CardContent
                   text={
                     "Some quick example text to build on the card title and make up the bulk of the card content. Some quick example text to build on the card title and make up the bulk of the card content., Some quick example text to build on the card title and make up the bulk of the card content.Some quick example text to build on the card title and make up the bulk of the card content."
@@ -322,7 +365,7 @@ export default function Dashboard() {
           </section>
         </div>
 
-        <div className="bg w-100  layout-auto mt-5     ">
+        <div className="bg w-100  layout-auto mt-5" id="Blog">
           <section className="d-flex justify-content-around border-simple">
             <div className="d-grid w-100 my-5 ">
               <h4 className="py-3 fs-3">
@@ -333,7 +376,12 @@ export default function Dashboard() {
               </h1>
               <br />
 
-              <section className="tam-100 d-flex gap-4 mt-5">
+              <section
+                className="tam-100 d-flex gap-4 mt-5"
+                data-aos="fade-down"
+                data-aos-offset="600"
+                data-aos-easing="ease-in-sine"
+              >
                 <div className="card">
                   <Image
                     width={"200"}
@@ -441,7 +489,7 @@ export default function Dashboard() {
           </section>
         </div>
 
-        <div className="bg w-100  layout-auto mt-5">
+        <div className="bg w-100  layout-auto mt-5" id="Contacto">
           <section className="d-flex border-simple">
             <div className="d-grid w-100 my-5 ">
               <section className=" mx-5 left">
@@ -449,11 +497,16 @@ export default function Dashboard() {
                   <i className="bi bi-circle-fill text-danger fs-6"></i> Contato
                 </h4>
                 <h1 className="fw-bolder  text-auto txt-t">
-                  Fale com a Tucano
+                  Fale com a JFTech
                 </h1>
               </section>
               <br />
-              <section className="tam-100 d-flex justify-content-around gap-4 mt-5">
+              <section
+                className="tam-100 d-flex justify-content-around gap-4 mt-5"
+                data-aos="fade-up"
+                data-aos-offset="600"
+                data-aos-easing="ease-in-sine"
+              >
                 <div className="col-7 col-sm-12 col-md-8 h-100">
                   <div className="field d-flex ">
                     <div className="form-group w-75 ">
@@ -523,21 +576,20 @@ export default function Dashboard() {
                   <div className="form-group">
                     <div className="d-flex justify-content-left mt-2 mx-2">
                       <Btn_Contato_Nos name={"Enviar Mensagem"} />
-
                     </div>
                   </div>
                 </div>
                 <div
                   className="col-4 col-sm-12 col-md-4 h-100 bg-danger rounded transparent-bg"
-                  style={{ marginLeft: "-20%" , height:'450px',width:'25%'}}
+                  style={{ marginLeft: "-20%", height: "450px", width: "25%" }}
                 >
                   <div className="center d-grid mt-5  justify-content-around align-items-center ">
-                  <br />
-                  <br />
-                
+                    <br />
+                    <br />
+
                     <div className="mt-5">
                       <h3 className="w-75 mb-3 mt-5 fs-1 mx-auto">
-Nos chame direto no WhatsApp!
+                        Nos chame direto no WhatsApp!
                       </h3>
                     </div>
                     <br />

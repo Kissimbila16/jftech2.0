@@ -6,17 +6,16 @@ import Rede_Socias from "@/app/components/socias";
 export default function Nav() {
   return (
     <nav>
-      <Rede_Socias/>
       <div className="d-flex justify-content-around bg">
         <Icon />
         <ul className="list d-flex ">
           <Nav_text name="Home" way="#home" />
-          <Nav_text name="Jftech" way="#home" />
-          <Nav_text name="Solucoes" way="#home" />
-          <Nav_text name="Portfolio" way="#home" />
-          <Nav_text name="Equipe" way="#home" />
-          <Nav_text name="Blog" way="#home" />
-          <Nav_text name="Contacto" way="#home" />
+          <Nav_text name="Jftech" way="#Jftech" />
+          <Nav_text name="Solucoes" way="#Solucoes" />
+          <Nav_text name="Portfolio" way="#Portfolio" />
+          <Nav_text name="Equipe" way="#Equipe" />
+          <Nav_text name="Blog" way="#Blog" />
+          <Nav_text name="Contacto" way="#Contacto" />
         </ul>
         <Btn_Contato_Nos name={'Orcamento'} />
         <i className="bi bi-list fs-1 py-3 m-2 mx-3"></i>
