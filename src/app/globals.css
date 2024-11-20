@@ -277,7 +277,7 @@ a {
        width:var(--width-auto);
     }
     .center{
-  text-align: center;
+  text-align: center!important;
     }
 
     .left{
@@ -477,31 +477,29 @@ transition: all 1.5s;
 /* From Uiverse.io by devkatyall */ 
 .card-slide {
   width: 100%;
-  background: rgba(41, 41, 41, 0.07);
+  /* background: rgba(41, 41, 41, 0.07); */
   white-space: nowrap;
   overflow: hidden;
   border-radius: 50px;
   border-radius: 0px;
-  -webkit-box-shadow: -10px 0px 13px -7px #0000003a,
-    10px 0px 13px -7px #0000003a, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-  box-shadow: -10px 0px 33px -7px #0000003a, 10px 0px 33px -7px #0000003a,
-    5px 5px 35px 5px rgba(0, 0, 0, 0);
 }
 
 button {
-  font-size: 70px;
+  font-size: 5.3rem;
   margin: 0 5px;
   border: none;
   background-color: transparent;
   cursor: grab;
 }
 button:hover {
-  transform: scale(1.1);
+  /* transform: scale(1.0); */
+  font-size: 5.5rem;
+
   transition: 0.5s ease;
 }
 .emojis {
   display: inline-block;
-  animation: 5s sliding infinite linear;
+  animation: 10s sliding infinite linear;
   margin-left: 28%;
 }
 
@@ -520,7 +518,7 @@ button:hover {
 }
 
 #hide{
-  display: block;
+  display: grid;
 }
 #flex-grid{
   display: flex;
@@ -528,13 +526,16 @@ button:hover {
   height: auto;
 }
 #font-auto{
-  font-size: 8rem;
+  font-size: 4rem;
  }
 
 @media(max-width:1100px){
   #hide{
     display: none!important;
   }
+
+
+
 #btn-main{
   margin-bottom: 15%;
 }
@@ -552,6 +553,21 @@ button:hover {
   width: 100%;
   height: 100%;
   margin-left: 0%!important;
+  }
+
+  
+
+  #grid-flex{
+    display: flex;
+  width: 100%;
+  height: 100%;
+  margin-left: 0%!important;
+  }
+
+  .width-auto{
+  display: flex;
+  width: 53vw;
+  height: 100%;
   }
 
   .img-main img{
@@ -601,4 +617,25 @@ button:hover {
   font-size: 2rem;
  }
 
+ 
+ .card.card-b:nth-child(1){
+  margin-top: 15%;
+ } 
+
+ .card-w{
+  background-color: red;
+ }
+
+
+ .card-link > .bi.bi-arrow-up-right.fs-1 {
+  margin-left: 100%!important;
+ }
+
+.w-center{
+  margin-left: -25%;
 }
+
+}
+
+
+

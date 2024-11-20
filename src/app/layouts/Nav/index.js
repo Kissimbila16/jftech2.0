@@ -1,7 +1,6 @@
 import Btn_Contato_Nos from "@/app/components/contacto";
 import Icon from "@/app/components/Icon";
 import Nav_text from "@/app/components/link";
-import Rede_Socias from "@/app/components/socias";
 
 export default function Nav() {
   return (

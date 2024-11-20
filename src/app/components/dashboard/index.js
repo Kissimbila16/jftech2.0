@@ -13,7 +13,7 @@ import Typed_text from "../typed";
 export default function Dashboard() {
   return (
     <main>
-      <div className="container  w-100">
+      <div className="w-100">
         <div className={"d-flex alig-items-center fundoPrincipal btn-shine"}>
           {/* <div className=""> */}
             <Typed_text text={"Jftech"} clas={"w-100 text-danger"} />{" "}
@@ -32,7 +32,7 @@ export default function Dashboard() {
         </div>
 
         <div
-          className={"justify-content-around-around my-5 mx-5  layout  "}
+          className={"justify-content-around-around my-xl-5 mx-5  layout  "}
           id="flex-grid"
           data-aos="fade-right"
           data-aos-offset="600"
@@ -67,15 +67,13 @@ export default function Dashboard() {
             </section>
           </div>
         </div>
-        <br id="hide" />
-        <br id="hide" />
-        <br id="hide" />
-        <br id="hide" />
-
+        <br id="hide-br" className="mb-5" />
         <div className=" w-100 layout-auto mb-xl-5 mt-xl-5 ">
               
-          <section className=" justify-content-around border-simple my-xl-5 " id="datalist">
-            <div className="mar-top gap-5" id="flex-grid">
+          <section className=" justify-content-around border-simple my-xl-5 " id="datalist"   data-aos="fade-up"
+          data-aos-offset="600"
+          data-aos-easing="ease-in-sine">
+            <div className="mar-top justify-content-xl-center gap-5" id="flex-grid">
               <Cardmin title={"567"} num={1} text={"projectos"} link={"#"} />
               <Cardmin title={"567"} num={1} text={"projectos"} link={"#"} />
               <Cardmin title={"567"} num={1} text={"projectos"} link={"#"} />
@@ -85,13 +83,11 @@ export default function Dashboard() {
         </div>
         <br />
 
-        <div className="bg w-100  layout-auto mt-xl-5" id="Solucoes">
+        <div className="bg w-100  layout-auto mt-5" id="Solucoes">
           <section className="d-flex justify-content-around border-simple">
             <div
               className="d-grid w-100 my-xl-5 "
-              data-aos="fade-up"
-              data-aos-offset="600"
-              data-aos-easing="ease-in-sine"
+           
             >
               <h4 className="py-3 fs-3">
                 <i className="bi bi-circle-fill text-danger fs-6"></i> Expertise
@@ -101,8 +97,8 @@ export default function Dashboard() {
 
               <section
                 className="tam-100 d-grid gap-4 mt-5"
+                
                 data-aos="fade-left"
-                data-aos-anchor="#example-anchor"
                 data-aos-offset="600"
                 data-aos-duration="500"
               >
@@ -137,18 +133,16 @@ export default function Dashboard() {
 
         <div className=" slide-t row-12 d-flex justify-content-around align-items-center">
           <div className="card-slide">
-            <div className="emojis">
-              <button>😄</button>
-              <button>😁</button>
-              <button>😆</button>
-              <button>😂</button>
+            <div className="emojis d-flex" id="font-auto">
+              <button className="d-flex align-items-center">Segurança Eletrônica <i className="bi bi-circle-fill text-danger fs-6 mt-3 mx-2"></i>   </button>
+              <button className="d-flex align-items-center">Redes de Computadores<i className="bi bi-circle-fill text-danger fs-6 mt-3 mx-2"></i>   </button>
+              <button className="d-flex align-items-center">Consultoria<i className="bi bi-circle-fill text-danger fs-6 mt-3 mx-2"></i>   </button>
+              <button className="d-flex align-items-center">Desenvolvimento Mobile<i className="bi bi-circle-fill text-danger fs-6 mt-3 mx-2"></i>   </button>
+              <button className="d-flex align-items-center">Desenvolvimento Web<i className="bi bi-circle-fill text-danger fs-6 mt-3 mx-2"></i>   </button>
+              <button className="d-flex align-items-center">Design UI/UX<i className="bi bi-circle-fill text-danger fs-6 mt-3 mx-2"></i>   </button>
+              <button className="d-flex align-items-center">Gestão de Conteúdo Digital<i className="bi bi-circle-fill text-danger fs-6 mt-3 mx-2"></i>   </button>
             </div>
-            <div className="emojis">
-              <button>😄</button>
-              <button>😁</button>
-              <button>😆</button>
-              <button>😂</button>
-            </div>
+            
           </div>
         </div>
         <div className="slide-w center d-grid  justify-content-around align-items-center ">
@@ -168,19 +162,19 @@ export default function Dashboard() {
           </div>
         </div>
 
-        <div className="bg w-100  layout-auto mt-5     ">
+        <div className="w-100  layout-auto mt-5">
           <section
             className="d-flex justify-content-center border-simple"
             id="Portfolio"
           >
             <div className="d-grid w-100 my-4 ">
-              <h4 className="py-3 fs-3">
-                <i className="bi bi-circle-fill text-danger fs-6"></i> Jobs
+              <h4 className="py-3 fs-3 mx-1 text-center">
+                <i className="bi bi-circle-fill text-danger fs-6" ></i> Jobs
               </h4>
-              <h1 className="fw-bolder text-s text-auto txt-t" id="font-auto">Portfólio</h1>
+              <h1 className="fw-bolder text-s text-auto txt-t text-center " id="font-auto">Portfólio</h1>
               <br />
-              <div className="d-flex justify-content-around w-100">
-                <ol className=" w-50 d-flex justify-content-around">
+              <div className="d-flex justify-content-around w-100 ">
+                <ol className=" w-50 d-block justify-content-around text-center" >
                   <Nav_text name={"Todos"} way="#" />
                   <Nav_text name={"Site"} way="#" />
                   <Nav_text name={"Landing Page"} way="#" />
