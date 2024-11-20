@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <>
       <footer className="mt-5">
-        <section className="d-flex w-100 justify-content-around border-simple layout-auto">
+        <section className="d-flex w-100 justify-content-around border-simple layout-auto" id="flex-grid">
           <div className="d-grid w-100 my-5 ">
             <h4 className="py-3 fs-3">
               <Icon />
@@ -65,7 +65,6 @@ export default function Footer() {
                 </li>
               </ol>
           <Link href={'#'} className="up-fixe"><i className=" bi bi-arrow-up-right"></i></Link>
-
             </section>
           </div>
 

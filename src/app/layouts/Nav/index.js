@@ -8,7 +8,7 @@ export default function Nav() {
     <nav>
       <div className="d-flex justify-content-around bg">
         <Icon />
-        <ul className="list d-flex ">
+        <ul className="list d-flex" id="hide">
           <Nav_text name="Home" way="#home" />
           <Nav_text name="Jftech" way="#Jftech" />
           <Nav_text name="Solucoes" way="#Solucoes" />

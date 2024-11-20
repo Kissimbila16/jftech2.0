@@ -12,14 +12,14 @@ import Typed_text from "../typed";
 
 export default function Dashboard() {
   return (
-    <man>
-      <div className="container row-100 w-100">
+    <main>
+      <div className="container  w-100">
         <div className={"d-flex alig-items-center fundoPrincipal btn-shine"}>
-          <h1 className="text-center main-txt">
+          {/* <div className=""> */}
             <Typed_text text={"Jftech"} clas={"w-100 text-danger"} />{" "}
-          </h1>
+          {/* </div> */}
         </div>
-        <div className="left-icons w-100 gap-4">
+        <div className="left-icons w-100 gap-4" id="hide">
           <Link href={"#"}>
             <i className="bi bi-instagram fs-3 mx-1"></i>
           </Link>
@@ -32,8 +32,8 @@ export default function Dashboard() {
         </div>
 
         <div
-          className={"d-flex justify-content-around-around my-5 mx-5  layout  "}
-          id="Jftech"
+          className={"justify-content-around-around my-5 mx-5  layout  "}
+          id="flex-grid"
           data-aos="fade-right"
           data-aos-offset="600"
           data-aos-easing="ease-in-sine"
@@ -56,21 +56,26 @@ export default function Dashboard() {
                 altamente qualificada e experiente, nos dedicamos a oferecer
                 serviços personalizados que atendem às necessidades específicas
                 de nossos clientes. Nossa missão é transformar desafios em
-                oportunidades através da tecnologia.
+                oportunidades através da tecnologia.Fale conosco
               </h5>
-              <br />
-                <Btn_Contato_Nos_circle
+              
+               <Btn_Contato_Nos_circle
                   name={" Fale conosco"}
-                  classe="btn-lg"
+                  classe="fs-5 center contact"
                   link="#whatshapp"
                 />
             </section>
           </div>
         </div>
+        <br id="hide" />
+        <br id="hide" />
+        <br id="hide" />
+        <br id="hide" />
 
-        <div className=" w-100 layout-auto mb-5 mt-5 ">
-          <section className="d-flex justify-content-around border-simple my-5 ">
-            <div className="d-flex gap-5 ">
+        <div className=" w-100 layout-auto mb-xl-5 mt-xl-5 ">
+              
+          <section className=" justify-content-around border-simple my-xl-5 " id="datalist">
+            <div className="mar-top gap-5" id="flex-grid">
               <Cardmin title={"567"} num={1} text={"projectos"} link={"#"} />
               <Cardmin title={"567"} num={1} text={"projectos"} link={"#"} />
               <Cardmin title={"567"} num={1} text={"projectos"} link={"#"} />
@@ -80,10 +85,10 @@ export default function Dashboard() {
         </div>
         <br />
 
-        <div className="bg w-100  layout-auto mt-5" id="Solucoes">
+        <div className="bg w-100  layout-auto mt-xl-5" id="Solucoes">
           <section className="d-flex justify-content-around border-simple">
             <div
-              className="d-grid w-100 my-5 "
+              className="d-grid w-100 my-xl-5 "
               data-aos="fade-up"
               data-aos-offset="600"
               data-aos-easing="ease-in-sine"
@@ -152,7 +157,7 @@ export default function Dashboard() {
             A GENTE
           </h6>
           <div className="text-t">
-            <h3 className="w-75 mb-3 mt-5 text-s mx-auto">
+            <h3 className="w-75 mb-3 mt-5 text-s mx-auto" id="font-auto">
               O seu projeto merece voar com a JFTech
             </h3>
           </div>
@@ -172,7 +177,7 @@ export default function Dashboard() {
               <h4 className="py-3 fs-3">
                 <i className="bi bi-circle-fill text-danger fs-6"></i> Jobs
               </h4>
-              <h1 className="fw-bolder text-s text-auto txt-t">Portfólio</h1>
+              <h1 className="fw-bolder text-s text-auto txt-t" id="font-auto">Portfólio</h1>
               <br />
               <div className="d-flex justify-content-around w-100">
                 <ol className=" w-50 d-flex justify-content-around">
@@ -257,10 +262,10 @@ export default function Dashboard() {
                 <h4 className="py-3 fs-3">
                   <i className="bi bi-circle-fill text-danger fs-6"></i> Nos
                 </h4>
-                <h1 className="fw-bolder text-s text-auto txt-t">
+                <h1 className="fw-bolder text-s text-auto txt-t" id="font-auto">
                   Team JFTech
                 </h1>
-                <h6 className="fw-bolder text-secondary w-50 fs-6 text-auto pt-4 ">
+                <h6 className="fw-bolder text-secondary w-xl-50  fs-6 text-auto pt-4 ">
                   {" "}
                   Conheça a galera que vai fazer o seu projeto voar, no padrão
                   JFTech.{" "}
@@ -306,7 +311,7 @@ export default function Dashboard() {
                 <i className="bi bi-circle-fill text-danger fs-6"></i>{" "}
                 Depoimentos
               </h4>
-              <h1 className="fw-bolder text-s text-auto txt-t">
+              <h1 className="fw-bolder text-s text-auto txt-t" id="font-auto">
                 O que falam da JFTech
               </h1>
               <br />
@@ -371,7 +376,7 @@ export default function Dashboard() {
               <h4 className="py-3 fs-3">
                 <i className="bi bi-circle-fill text-danger fs-6"></i> Blog
               </h4>
-              <h1 className="fw-bolder text-s text-auto txt-t">
+              <h1 className="fw-bolder text-s text-auto txt-t" id="font-auto">
                 Conteúdos de valor
               </h1>
               <br />
@@ -582,6 +587,7 @@ export default function Dashboard() {
                 <div
                   className="col-4 col-sm-12 col-md-4 h-100 bg-danger rounded transparent-bg"
                   style={{ marginLeft: "-20%", height: "450px", width: "25%" }}
+                  id="hide"
                 >
                   <div className="center d-grid mt-5  justify-content-around align-items-center ">
                     <br />
@@ -605,6 +611,6 @@ export default function Dashboard() {
           </section>
         </div>
       </div>
-    </man>
+    </main>
   );
 }
