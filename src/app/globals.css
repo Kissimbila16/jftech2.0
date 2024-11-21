@@ -825,6 +825,64 @@ input.form__label{
   margin-top:29%;
 }
 
+
+.list-footer:nth-child(1){
+  margin-top: 28%!important;
+  margin-left: auto!important;
+  }
+
+  .list-footer:nth-child(2){
+    margin-top: 18%!important;
+    margin-bottom: none!important;
+    }
+
+#footer-text{
+  margin-top: -25%!important;
+  margin-left: -15!important;
+  height: auto!important;
+
+  /* margin-bottom: -10%!important; */
+}
+
+#listFooter{
+  margin-top:0%;
+  margin-left: 20%!important;
+  height: 100px!important;
+  width:100%;
+
+  }
+
+  #listFooter1{
+    margin-top:-15%!important;
+  margin-left: -5%!important;
+        width:100%!important;
+  
+
+    }
+
+    #listFooter2{
+      margin-top:-29%!important;
+    margin-left: -55%!important;
+        width:100%!important;
+    
+  
+      }
+
+      #listFooter3{
+        margin-top:-29%!important;
+      margin-left: -45%!important;
+        width:100%!important;
+      
+    
+        }
+
+        #listFooter4{
+          margin-top:-49%!important;
+        margin-left: -39%!important;
+        width:100%!important;
+      
+          }
+
 }
 
 
