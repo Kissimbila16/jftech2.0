@@ -17,7 +17,7 @@ export default function Dashboard() {
       <div className="w-100">
         <div className={"d-flex alig-items-center fundoPrincipal btn-shine "}>
           {/* <div className=""> */}
-            <Typed_text text={"Jftech"} clas={"w-100 text-danger"} />{" "}
+            <Typed_text text={"Jftech"} clas={"w-100 text-danger"} />
           {/* </div> */}
         </div>
         <div className="left-icons w-100 gap-4" id="hide">
@@ -114,13 +114,13 @@ export default function Dashboard() {
                   num={600}
                   text={"loorccccccccccccccc"}
                   link={"#"}
-                />{" "}
+                />
                 <Cardmax
                   title={"03"}
                   num={700}
                   text={"loorccccccccccccccc"}
                   link={"#"}
-                />{" "}
+                />
                 <Cardmax
                   title={"04"}
                   num={800}
@@ -265,9 +265,9 @@ export default function Dashboard() {
                   Team JFTech
                 </h1>
                 <h6 className="fw-bolder text-secondary width-auto  fs-6 text-auto pt-4 ">
-                  {" "}
+                  
                   Conheça a galera que vai fazer o seu projeto voar, no padrão
-                  JFTech.{" "}
+                  JFTech.
                 </h6>
               </section>
               <br />
@@ -288,7 +288,7 @@ export default function Dashboard() {
           <section className="d-flex justify-content-around border-simple">
             <div className="d-grid w-100 my-5 ">
               <h4 className="py-3 fs-3">
-                <i className="bi bi-circle-fill text-danger fs-6"></i>{" "}
+                <i className="bi bi-circle-fill text-danger fs-6"></i>
                 Depoimentos
               </h4>
               <h1 className="fw-bolder text-s text-auto txt-t" id="font-auto">
@@ -513,7 +513,7 @@ export default function Dashboard() {
                         />
                         <label className="form__label">Seu Nome</label>
                       </div>
-                    </div>{" "}
+                    </div>
                     <div className="form-group w-xl-75 ">
                       <div className="form__group">
                         <br />
@@ -539,7 +539,7 @@ export default function Dashboard() {
                         />
                         <label className="form__label">Seu Telefone</label>
                       </div>
-                    </div>{" "}
+                    </div>
                     <div className="form-group w-xl-75  ">
                       <div className="form__group ">
                         <br />
@@ -565,7 +565,7 @@ export default function Dashboard() {
                       </div>
                       <br/>
 
-                    </div>{" "}
+                    </div>
                   </div>
 
                   <div className="form-group">
