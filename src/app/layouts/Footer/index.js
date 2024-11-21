@@ -64,7 +64,6 @@ export default function Footer() {
                 <Link href={'#'}><i className="bi bi-facebook fs-4 mx-2"></i></Link>
                 </li>
               </ol>
-          <Link href={'#'} className="up-fixe"><i className=" bi bi-arrow-up-right"></i></Link>
             </section>
           </div>
 

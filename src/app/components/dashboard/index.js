@@ -14,7 +14,7 @@ export default function Dashboard() {
   return (
     <main>
       <div className="w-100">
-        <div className={"d-flex alig-items-center fundoPrincipal btn-shine"}>
+        <div className={"d-flex alig-items-center fundoPrincipal btn-shine "}>
           {/* <div className=""> */}
             <Typed_text text={"Jftech"} clas={"w-100 text-danger"} />{" "}
           {/* </div> */}
@@ -174,7 +174,7 @@ export default function Dashboard() {
               <h1 className="fw-bolder text-s text-auto txt-t text-center " id="font-auto">Portfólio</h1>
               <br />
               <div className="d-flex justify-content-around w-100 ">
-                <ol className=" w-50 d-block justify-content-around text-center" >
+                <ol className=" w-xl-50 d-block justify-content-around text-center" >
                   <Nav_text name={"Todos"} way="#" />
                   <Nav_text name={"Site"} way="#" />
                   <Nav_text name={"Landing Page"} way="#" />
@@ -190,6 +190,7 @@ export default function Dashboard() {
                 data-aos="fade-left"
                 data-aos-offset="600"
                 data-aos-easing="ease-in-sine"
+                id="hide"
               >
                 <Card title={"567"} num={1} text={"projectos"} link={"#"} />
                 <Card title={"567"} num={1} text={"projectos"} link={"#"} />
@@ -202,6 +203,7 @@ export default function Dashboard() {
                 data-aos="fade-right"
                 data-aos-offset="600"
                 data-aos-easing="ease-in-sine"
+                id="hide"
               >
                 <Card title={"567"} num={1} text={"projectos"} link={"#"} />
                 <Card title={"567"} num={1} text={"projectos"} link={"#"} />
@@ -214,6 +216,7 @@ export default function Dashboard() {
                 data-aos="fade-left"
                 data-aos-offset="600"
                 data-aos-easing="ease-in-sine"
+                id="hide"
               >
                 <Card title={"567"} num={1} text={"projectos"} link={"#"} />
                 <Card title={"567"} num={1} text={"projectos"} link={"#"} />
@@ -222,10 +225,11 @@ export default function Dashboard() {
               </section>
 
               <section
-                className="w-100 d-flex justify-content-around  gap-3 mt-5"
+                className="w-100 justify-content-around  gap-3 mt-5"
                 data-aos="fade-right"
                 data-aos-offset="600"
                 data-aos-easing="ease-in-sine"
+                id="flex-grid"
               >
                 <Card title={"567"} num={1} text={"projectos"} link={"#"} />
                 <Card title={"567"} num={1} text={"projectos"} link={"#"} />

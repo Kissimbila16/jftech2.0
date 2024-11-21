@@ -1,6 +1,7 @@
 import Dashboard from "@/app/components/dashboard";
 import Footer from "../Footer";
 import Header from "../Header";
+import Link from "next/link";
 
 export default function Default() {
   return (
@@ -10,6 +11,7 @@ export default function Default() {
         <Dashboard />
         <Footer />
       </div>
+      <Link href={'#'} className="up-fixe"><i className=" bi bi-arrow-up-right"></i></Link>
     </main>
   );
 }
