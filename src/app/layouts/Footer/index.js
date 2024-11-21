@@ -59,9 +59,9 @@ export default function Footer() {
             <section id="listFooter4" className="tam-100 d-flex mx-5 w100">
               <ol className="list-footer mx-5 px-1" style={{marginTop:'-30%'}}>
                 <li className="mx-5 d-flex">
-                <Link href={'#'}><i className="bi bi-instagram fs-4 mx-2"></i></Link>
-                <Link href={'#'}><i className="bi bi-linkedin fs-4 mx-2"></i></Link>
-                <Link href={'#'}><i className="bi bi-facebook fs-4 mx-2"></i></Link>
+                <Link href={'#'}><i className="bi bi-instagram fs-4 mx-3"></i></Link>
+                <Link href={'#'}><i className="bi bi-linkedin fs-4 mx-3"></i></Link>
+                <Link href={'#'}><i className="bi bi-facebook fs-4 mx-3"></i></Link>
                 </li>
               </ol>
             </section>
