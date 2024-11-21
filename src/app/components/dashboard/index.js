@@ -305,22 +305,22 @@ export default function Dashboard() {
               >
                 <CardContent
                   text={
-                    "'A JF-Tech Angola transformou nossa visão em realidade com um software que realmente atende nossas necessidades.'— Maria dos Santos, Cliente"}
-                  title={"domingos J.kissimbila "}
+                    "A JF-Tech Angola transformou nossa visão em realidade com um software que realmente atende nossas necessidades."}
+                  title={"Maria dos Santos "}
                   num={"criado em 2024"}
                   link={"#"}
                 />
                 <CardContent
-                  text={'"O suporte da equipe foi excepcional durante todo o processo. Recomendo!"— João Ferreira, Cliente'}
-                  title={"domingos J.kissimbila "}
+                  text={"O suporte da equipe foi excepcional durante todo o processo. Recomendo!"}
+                  title={"João Ferreira"}
                   num={"criado em 2024"}
                   link={"#"}
                 />
                 <CardContent
                   text={
-                    "Some quick example text to build on the card title and make up the bulk of the card content. Some quick example text to build on the card title and make up the bulk of the card content., Some quick example text to build on the card title and make up the bulk of the card content.Some quick example text to build on the card title and make up the bulk of the card content."
+                    "Contar com o apoio da JFTech é maravilhoso! A equipe sempre topa as minhas ideias e encontra o melhor jeito de executá-las. Não poderia ter escolhido parceiros melhores, me sinto muito segura com o suporte oferecido."
                   }
-                  title={"domingos J.kissimbila "}
+                  title={"Maria dos Santos"}
                   num={"criado em 2024"}
                   link={"#"}
                 />
@@ -384,7 +384,7 @@ export default function Dashboard() {
                       style={{ color: "black" }}
                     >
                       Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                      make up the bulk of the content.
                     </Link>
                   </div>
                 </div>
@@ -406,7 +406,7 @@ export default function Dashboard() {
                       style={{ color: "black" }}
                     >
                       Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                      make up the bulk of the content.
                     </Link>
                   </div>
                 </div>
@@ -428,7 +428,7 @@ export default function Dashboard() {
                       style={{ color: "black" }}
                     >
                       Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                      make up the bulk of the content.
                     </Link>
                   </div>
                 </div>
@@ -450,7 +450,7 @@ export default function Dashboard() {
                       style={{ color: "black" }}
                     >
                       Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                      make up the bulk of the content.
                     </Link>
                   </div>
                 </div>
