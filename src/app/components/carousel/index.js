@@ -1,59 +1,78 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
-import Glide from "@glidejs/glide";
-import Image from "next/image";
+import useEmblaCarousel from "embla-carousel-react";
+import Autoplay from "embla-carousel-autoplay";
+import Authes from "../cardAuths";
 
-const MyCarousel = () => {
-  const glideRef = useRef(null);
-
-  useEffect(() => {
-    new Glide(glideRef.current, {
-      // Opções de configuração do Glide.js
-      type: "slider",
-      startAt: 0,
-      perView: 1,
-    }).mount();
-  }, []);
+export default function MyCarousel() {
+  //   const [emblaRef] = useEmblaCarousel({ loop: false,duration:500 }, [Autoplay()]);
+  const [emblaRef, emblaApi] = useEmblaCarousel({
+    loop: true,
+    speed: 500,
+    align: "center",
+  });
 
   return (
-    <div ref={glideRef} className="glide" style={{width:'70vw'}}>
-      <div className="glide" data-glide-autoplay="2000">
-        <div className="glide__track" data-glide-el="track">
-          <div className="glide__slides w-100">
-            <div className="glide__slide d-flex bg-danger">
-              <Image
-                src="/logo.png"
-                alt="Image 1"
-                width={"300"}
-                height={"300"}
-              />
-            </div>
-            <div className="glide__slide">
-              <Image
-                src="/logo.png"
-                alt="Image 2"
-                width={"300"}
-                height={"300"}
-              />
-            </div>
-            <div className="glide__slide">
-              <Image
-                src="/logo.png"
-                alt="Image 3"
-                width={"300"}
-                height={"300"}
-              />
-            </div>
-          </div>
+    <div className="embla mx-xl-5" ref={emblaRef}>
+      {/* <div className=""> */}
+     
+      <div
+        className="embla__container mx-3"
+        id="list-team"
+      >
+        <div className="embla__slide d-xl-flex gap-2">
+          <Authes
+            name={"domingos J.kissimbila "}
+            foto={"/logo.png"}
+            func={"desenvolvedor web"}
+          />
+          <Authes
+            name={"domingos J.kissimbila "}
+            foto={"/logo.png"}
+            func={"desenvolvedor web"}
+          />
+          <Authes
+            name={"domingos J.kissimbila "}
+            foto={"/logo.png"}
+            func={"desenvolvedor web"}
+          />
+          <Authes
+            name={"domingos J.kissimbila "}
+            foto={"/logo.png"}
+            func={"desenvolvedor web"}
+          />
         </div>
-        <div className="glide__arrows" data-glide-el="controls">
-          <button className="glide__prev">prev</button>
-          <button className="glide__next">next</button>
+        <div className="embla__slide d-xl-flex gap-2">
+          <Authes
+            name={"domingos J.kissimbila "}
+            foto={"/logo.png"}
+            func={"desenvolvedor web"}
+          />
+          <Authes
+            name={"domingos J.kissimbila "}
+            foto={"/logo.png"}
+            func={"desenvolvedor web"}
+          />
+          <Authes
+            name={"domingos J.kissimbila "}
+            foto={"/logo.png"}
+            func={"desenvolvedor web"}
+          />
+          <Authes
+            name={" Lucas bartolomeu "}
+            foto={"/logo.png"}
+            func={"desenvolvedor web"}
+          />
         </div>
+      </div>  
+         <div className="d-flex" id="hide-sm">
+        <button onClick={() => emblaApi.scrollPrev()}>
+          <i className="bi bi-caret-left fs-1"></i>
+        </button>
+        <button onClick={() => emblaApi.scrollNext()}>
+          <i className="bi bi-caret-right fs-1"></i>
+        </button>
       </div>
     </div>
   );
-};
-
-export default MyCarousel;
+}

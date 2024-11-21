@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <>
       <footer className="mt-5">
-        <section className="d-flex w-100 justify-content-around border-simple layout-auto" id="flex-grid">
+        <section className="w-100 justify-content-around border-simple layout-auto" id="flex-grid">
           <div className="d-grid w-100 my-5 ">
             <h4 className="py-3 fs-3">
               <Icon />
@@ -52,7 +52,7 @@ export default function Footer() {
               </ol>
             </section>
           </div>
-          <div className="d-grid w-100 my-5 ">
+          <div className="d-grid center wid my-5 ">
             <h4 className="py-3 fs-4 px-4">
                Siga-nos
             </h4>

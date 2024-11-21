@@ -255,8 +255,8 @@ export default function Dashboard() {
         </div>
 
         <div className="bg w-100  layout-auto mt-5" id="Equipe">
-          <section className=" border-simple">
-            <div className="d-grid w-100 my-5 ">
+          <section className="d-flex border-simple">
+            <div className="d-grid w-100 my-5">
               <section className=" mx-5 left">
                 <h4 className="py-3 fs-3">
                   <i className="bi bi-circle-fill text-danger fs-6"></i> Nos
@@ -264,7 +264,7 @@ export default function Dashboard() {
                 <h1 className="fw-bolder text-s text-auto txt-t" id="font-auto">
                   Team JFTech
                 </h1>
-                <h6 className="fw-bolder text-secondary w-xl-50  fs-6 text-auto pt-4 ">
+                <h6 className="fw-bolder text-secondary width-auto  fs-6 text-auto pt-4 ">
                   {" "}
                   Conheça a galera que vai fazer o seu projeto voar, no padrão
                   JFTech.{" "}
@@ -273,18 +273,12 @@ export default function Dashboard() {
               <br />
 
               <section
-                className=" mt-5"
-                style={{width:'500px'}}
-              
+                className="tam-100 justify-content-around mx-xl-5 mt-5"
+              //  style={{width:'100vw'}}
               >
-                {/* <Authes
-                  name={"domingos J.kissimbila "}
-                  foto={"/logo.png"}
-                  func={"desenvolvedor web"}
-                /> */}
-
- <MyCarousel/>
-               
+{/* <div className="mx-xl-5" id="flex-grid "> */}
+<MyCarousel/>
+{/* </div> */}
               </section>
             </div>
           </section>
@@ -303,23 +297,21 @@ export default function Dashboard() {
               <br />
 
               <section
-                className="tam-100 d-flex gap-3 mx-5 justify-content-center mt-5"
+                className="tam-100 gap-3 mx-5 justify-content-center mt-5"
                 data-aos="fade-up"
                 data-aos-offset="600"
                 data-aos-easing="ease-in-sine"
+                id="flex-grid"
               >
                 <CardContent
                   text={
-                    "Some quick example text to build on the card title and make up the bulk of the card content. Some quick example text to build on the card title and make up the bulk of the card content., Some quick example text to build on the card title and make up the bulk of the card content.Some quick example text to build on the card title and make up the bulk of the card content."
-                  }
+                    "'A JF-Tech Angola transformou nossa visão em realidade com um software que realmente atende nossas necessidades.'— Maria dos Santos, Cliente"}
                   title={"domingos J.kissimbila "}
                   num={"criado em 2024"}
                   link={"#"}
                 />
                 <CardContent
-                  text={
-                    " Some quick example text to build on the card title and make up the bulk of the card content., Some quick example text to build on the card title and make up the bulk of the card content.Some quick example text to build on the card title and make up the bulk of the card content."
-                  }
+                  text={'"O suporte da equipe foi excepcional durante todo o processo. Recomendo!"— João Ferreira, Cliente'}
                   title={"domingos J.kissimbila "}
                   num={"criado em 2024"}
                   link={"#"}
@@ -368,12 +360,15 @@ export default function Dashboard() {
               <br />
 
               <section
-                className="tam-100 d-flex gap-4 mt-5"
-                data-aos="fade-down"
+                className="tam-100 gap-4 mt-5"
+                data-aos="fade-left"
                 data-aos-offset="600"
                 data-aos-easing="ease-in-sine"
+                id="flex-grid"  
               >
-                <div className="card">
+                <div className="card" data-aos="fade-left"
+                data-aos-offset="600"
+                data-aos-easing="ease-in-sine">
                   <Image
                     width={"200"}
                     height={"300"}
@@ -393,7 +388,9 @@ export default function Dashboard() {
                     </Link>
                   </div>
                 </div>
-                <div className="card">
+                <div className="card"  data-aos="fade-left"
+                data-aos-offset="700"
+                data-aos-easing="ease-in-sine">
                   <Image
                     width={"200"}
                     height={"300"}
@@ -413,7 +410,9 @@ export default function Dashboard() {
                     </Link>
                   </div>
                 </div>
-                <div className="card">
+                <div className="card"  data-aos="fade-left"
+                data-aos-offset="800"
+                data-aos-easing="ease-in-sine">
                   <Image
                     width={"200"}
                     height={"300"}
@@ -433,7 +432,9 @@ export default function Dashboard() {
                     </Link>
                   </div>
                 </div>
-                <div className="card">
+                <div className="card mb-3"  data-aos="fade-left"
+                data-aos-offset="900"
+                data-aos-easing="ease-in-sine">
                   <Image
                     width={"200"}
                     height={"300"}
@@ -441,11 +442,11 @@ export default function Dashboard() {
                     className="card-img-top"
                     alt="loogo"
                   />
-                  <div className="card-body">
+                  <div className="card-body ">
                     <h5 className="card-title">Card title</h5>
                     <Link
                       href="#"
-                      className="card-text touched-link"
+                      className="card-text touched-link "
                       style={{ color: "black" }}
                     >
                       Some quick example text to build on the card title and
@@ -495,24 +496,25 @@ export default function Dashboard() {
               <section
                 className="tam-100 d-flex justify-content-around gap-4 mt-5"
                 data-aos="fade-up"
-                data-aos-offset="600"
+                data-aos-offset="300"
                 data-aos-easing="ease-in-sine"
+                
               >
-                <div className="col-7 col-sm-12 col-md-8 h-100">
-                  <div className="field d-flex ">
-                    <div className="form-group w-75 ">
+                <div className="col-7 col-sm-12 col-md-8" id="grid">
+                  <div className="field" id="flex-grid">
+                    <div className="form-group w-xl-75 ">
                       <div className="form__group field">
-                        <br />
+                        {/* <br /> */}
                         <input
                           type="input"
                           className="form__field"
                           placeholder="Name"
                           required=""
                         />
-                        <label className="form__label">Name</label>
+                        <label className="form__label">Seu Nome</label>
                       </div>
                     </div>{" "}
-                    <div className="form-group w-75 ">
+                    <div className="form-group w-xl-75 ">
                       <div className="form__group">
                         <br />
                         <input
@@ -521,12 +523,12 @@ export default function Dashboard() {
                           placeholder="Name"
                           required=""
                         />
-                        <label className="form__label">Name</label>
+                        <label className="form__label">Seu E-mail</label>
                       </div>
                     </div>
                   </div>
-                  <div className="d-flex">
-                    <div className="form-group w-75 ">
+                  <div id="flex-grid">
+                    <div className="form-group w-xl-75 ">
                       <div className="form__group ">
                         <br />
                         <input
@@ -535,10 +537,10 @@ export default function Dashboard() {
                           placeholder="Name"
                           required=""
                         />
-                        <label className="form__label">Name</label>
+                        <label className="form__label">Seu Telefone</label>
                       </div>
                     </div>{" "}
-                    <div className="form-group w-75  ">
+                    <div className="form-group w-xl-75  ">
                       <div className="form__group ">
                         <br />
                         <input
@@ -547,25 +549,27 @@ export default function Dashboard() {
                           placeholder="Name"
                           required=""
                         />
-                        <label className="form__label">Name</label>
+                        <label className="form__label">Assunto</label>
                       </div>
                     </div>
                   </div>
-                  <div className="field w-100 d-flex">
-                    <div className="form-group w-100  mt-4   ">
+                  <div className="field w-100" id="flex-grid">
+                    <div className="form-group w-100 mb-5  mt-4   ">
                       <label className="txt-left px-4 mb-4">Mensagem</label>
                       <div className="w-100" style={{ marginLeft: "-8%" }}>
                         <textarea
-                          className="area transparent "
+                          className="area transparent mb-5 "
                           placeholder="e.g. Hello world"
                           style={{ height: "200px", width: "85.5%" }}
                         ></textarea>
                       </div>
+                      <br/>
+
                     </div>{" "}
                   </div>
 
                   <div className="form-group">
-                    <div className="d-flex justify-content-left mt-2 mx-2">
+                    <div className="d-flex justify-content-left mx-2"  id="send">
                       <Btn_Contato_Nos name={"Enviar Mensagem"} />
                     </div>
                   </div>
@@ -579,15 +583,15 @@ export default function Dashboard() {
                     <br />
                     <br />
 
-                    <div className="mt-5">
-                      <h3 className="w-75 mb-3 mt-5 fs-1 mx-auto">
+                    <div className="">
+                      <h3 className="w-75 mb-3 mt-3 fs-1 mx-auto">
                         Nos chame direto no WhatsApp!
                       </h3>
                     </div>
                     <br />
                     <br />
 
-                    <div className="mx-5 mt-2 ">
+                    <div className="mx-5 " style={{marginTop:'-45%'}}>
                       <Btn_Contato_Nos name={"Conversar agora"} />
                     </div>
                   </div>
