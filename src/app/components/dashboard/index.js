@@ -9,6 +9,7 @@ import Authes from "../cardAuths";
 import CardContent from "../cardcontent";
 import Link from "next/link";
 import Typed_text from "../typed";
+import MyCarousel from "../carousel";
 
 export default function Dashboard() {
   return (
@@ -254,7 +255,7 @@ export default function Dashboard() {
         </div>
 
         <div className="bg w-100  layout-auto mt-5" id="Equipe">
-          <section className="d-flex border-simple">
+          <section className=" border-simple">
             <div className="d-grid w-100 my-5 ">
               <section className=" mx-5 left">
                 <h4 className="py-3 fs-3">
@@ -272,10 +273,9 @@ export default function Dashboard() {
               <br />
 
               <section
-                className="tam-100 d-flex justify-content-around gap-4 mt-5"
-                data-aos="fade-left"
-                data-aos-offset="600"
-                data-aos-easing="ease-in-sine"
+                className=" mt-5"
+                style={{width:'500px'}}
+              
               >
                 {/* <Authes
                   name={"domingos J.kissimbila "}
@@ -283,7 +283,7 @@ export default function Dashboard() {
                   func={"desenvolvedor web"}
                 /> */}
 
-
+ <MyCarousel/>
                
               </section>
             </div>
