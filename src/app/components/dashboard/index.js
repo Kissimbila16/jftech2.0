@@ -277,26 +277,14 @@ export default function Dashboard() {
                 data-aos-offset="600"
                 data-aos-easing="ease-in-sine"
               >
-                <Authes
+                {/* <Authes
                   name={"domingos J.kissimbila "}
                   foto={"/logo.png"}
                   func={"desenvolvedor web"}
-                />
-                <Authes
-                  name={"domingos J.kissimbila "}
-                  foto={"/logo.png"}
-                  func={"desenvolvedor web"}
-                />
-                <Authes
-                  name={"domingos J.kissimbila "}
-                  foto={"/logo.png"}
-                  func={"desenvolvedor web"}
-                />
-                <Authes
-                  name={"domingos J.kissimbila "}
-                  foto={"/logo.png"}
-                  func={"desenvolvedor web"}
-                />
+                /> */}
+
+
+               
               </section>
             </div>
           </section>
