@@ -3,9 +3,7 @@ import Icon from "@/app/components/Icon";
 import Nav_text from "@/app/components/link";
  
 export default function Nav() {
- function menu_clicked(){
-    console.log('sideBar indesponivel');
-  }
+
 
 
 
@@ -25,7 +23,7 @@ export default function Nav() {
       <div id="hide">
       <Btn_Contato_Nos name={'Orcamento'} />
       </div>
-<button onClick={menu_clicked()} style={{marginTop:'-10%'}}>
+<button style={{marginTop:'-10%'}}>
 <i className="bi bi-list fs-1 py-3 m-3 mx-3 text-white"></i>
 </button>
         &nbsp;
