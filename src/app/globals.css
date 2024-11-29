@@ -299,7 +299,7 @@ a {
 
 
     .transparent-bg{
-      background-image: url('/logo.png');
+      background-image: url('/logo/logo.png');
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -646,6 +646,10 @@ button:hover {
 
 
 
+    #icon-logo{
+      margin-left: 2.6%;
+    }
+
 
 
 
@@ -900,6 +904,13 @@ input.form__label{
         width:100%!important;
       
           }
+
+
+
+          #icon-logo{
+            margin-left: 3%;
+          }
+
 
 }
 

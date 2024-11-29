@@ -5,7 +5,6 @@ import Cardmax from "../cardmax";
 import Btn_Contato_Nos from "../contacto";
 import Card from "../card";
 import Nav_text from "../link";
-import Authes from "../cardAuths";
 import CardContent from "../cardcontent";
 import Link from "next/link";
 import Typed_text from "../typed";
@@ -15,7 +14,8 @@ export default function Dashboard() {
   return (
     <main>
       <div className="w-100">
-        <div className={"d-flex alig-items-center fundoPrincipal btn-shine "}>
+        <div className={"d-flex alig-items-center fundoPrincipal btn-shine "}
+         style={{backgroundImage:'url(./logo/logo.png);',backgroundRepeat:'no-repeat',backgroundSize:'100% 115%',backgroundPosition:'center'}}>
           {/* <div className=""> */}
             <Typed_text text={"Jftech"} clas={"w-100 text-danger"} />
           {/* </div> */}
@@ -40,7 +40,7 @@ export default function Dashboard() {
           data-aos-easing="ease-in-sine"
         >
           <div className="row-6 w-50 col-sm-12 col-md-12 col-xxl-6 img-main text-l">
-            <Image src={"/logo.png"} alt="foto" width={"700"} height={"500"} />
+            <Image src={"/logo/logo.png"} alt="foto" width={"700"} height={"500"} className="rounded-2 mx-1" />
           </div>
           <div className="row-6 w-50 col-sm-12 col-md-12 col-xxl-6 text-l d-grid ">
             <section className="zone-txt">
@@ -146,7 +146,7 @@ export default function Dashboard() {
             
           </div>
         </div>
-        <div className="slide-w center d-grid  justify-content-around align-items-center ">
+        <div className="slide-w center d-grid  justify-content-around align-items-center"        style={{backgroundImage:'url(./logo/logo.png);',backgroundRepeat:'no-repeat',backgroundSize:'100% 175%',backgroundPosition:'left'}}>
           <h6 className="mb-5 pb-5 mt-4">
             <i className="bi bi-circle-fill text-danger fs-6"></i> CONVERSA COM
             A GENTE

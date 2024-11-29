@@ -9,9 +9,9 @@ export default function Nav() {
 
   return (
     <nav>
-      <div className="my-2 d-flex justify-content-between h-100 w-100 align-items-center bg">
+      <div className="my-xl-2 d-flex justify-content-between h-xl-100 w-100 align-items-center bg">
         <Icon />
-        <ul className="list d-flex" id="hide">
+        <ul className="list d-flex mt-1" id="hide">
           <Nav_text name="Home" way="#home" />
           <Nav_text name="Jftech" way="#Jftech" />
           <Nav_text name="Solucoes" way="#Solucoes" />
@@ -23,10 +23,9 @@ export default function Nav() {
       <div id="hide">
       <Btn_Contato_Nos name={'Orcamento'} />
       </div>
-<button style={{marginTop:'-10%'}}>
-<i className="bi bi-list fs-1 py-3 m-3 mx-3 text-white"></i>
+<button>
+<i className="bi bi-list fs-2 mx-3 text-white"></i>
 </button>
-        &nbsp;
       </div>
     </nav>
   );
